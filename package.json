@@ -1,0 +1,14 @@
+{
+    "name": "Web Design",
+    "description": "Azure hosted main Web Design web app",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Darius Lukas",
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}
