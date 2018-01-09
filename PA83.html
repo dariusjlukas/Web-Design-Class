@@ -9,16 +9,117 @@
     <link rel="stylesheet" href="w3.css" />
     <link rel="stylesheet" href="PA8-theme.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="metro.css">
 
     <style>
-            video{
-                min-width: 100%;
-                min-height: 100%;
-                width: auto;
-                height: auto;
-                /* background: url('newZealand.jpg') no-repeat; */
-                /* background-size:cover; */
-            }
-        
-        </style>
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            /* background: url('newZealand.jpg') no-repeat; */
+            /* background-size:cover; */
+        }
+    </style>
 </head>
+
+<body class="w3-theme">
+    <div class="w3-bar w3-xxlarge" style="color: #004331; background-color: #00c08d;">
+        <a href="PA8.html" class="w3-bar-item w3-button w3-border-right w3-mobile">
+            <i class="material-icons">home</i>
+        </a>
+        <a href="PA82.html" class="w3-bar-item w3-button w3-border-right w3-mobile">Things to see</a>
+        <a href="PA83.html" class="w3-bar-item w3-button w3-border-right w3-mobile w3-theme">Things to do</a>
+        <a href="PA84.html" class="w3-bar-item w3-button w3-border-right w3-mobile">Facts</a>
+        <a href="PA85.html" class="w3-bar-item w3-button w3-border-right w3-mobile">Travel</a>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col w3-mobile">
+            <div class="w3-margin">
+                <button onclick="document.getElementById('parks').style.display='block'" style="width: 100%;" class="w3-button">
+
+                    <img src=".jpg" alt="" height="auto" width="100%" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col w3-mobile">
+            <div class="w3-margin">
+                <button onclick="document.getElementById('movie').style.display='block'" style="width: 100%;" class="w3-button">
+
+                    <img src=".jpg" alt="" height="auto" width="100%" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col w3-mobile">
+            <div class="w3-margin">
+                <button onclick="document.getElementById('flights').style.display='block'" style="width: 100%;" class="w3-button">
+
+                    <img src=".jpg" alt="" height="auto" width="100%" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="parks" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-theme-l4">
+            <div class="w3-container w3-theme-l1">
+                <span onclick="document.getElementById('parks').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h1>National Parks</h1>
+            </div>
+            <div>
+                <img style="width:100%;" height="auto" src=".jpg" alt="" />
+            </div>
+            <div class="w3-container w3-theme-l1">
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="movie" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-theme-l4">
+            <div class="w3-container w3-theme-l1">
+                <span onclick="document.getElementById('movie').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h1>
+                    Movie Sets
+                </h1>
+            </div>
+            <div>
+                <img style="width:100%;" height="auto" src=".jpg" alt="" />
+            </div>
+            <div class="w3-container w3-theme-l1">
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="flights" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-theme-l4">
+                <div class="w3-container w3-theme-l1">
+                    <span onclick="document.getElementById('flights').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h1>
+                        Scenic Flights
+                    </h1>
+                </div>
+                <div>
+                    <img style="width:100%;" height="auto" src=".jpg" alt="" />
+                </div>
+                <div class="w3-container w3-theme-l1">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+</body>
