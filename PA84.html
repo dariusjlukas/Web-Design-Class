@@ -36,10 +36,22 @@
 
     <div class="w3-row">
         <div class="w3-col w3-mobile">
+            <div class="w3-margin w3-center">
+                <h1>Facts about New Zealand</h1>
+                <audio controls style="width:50%">
+                    <source src="facts_01.ogg" type="audio/ogg">
+                    <source src="facts.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col w3-mobile">
             <div class="w3-margin">
                 <button onclick="document.getElementById('animals').style.display='block'" style="width: 100%;" class="w3-button">
 
-                    <img src=".jpg" alt="" height="auto" width="100%" />
+                    <img src="WildlifeEdited.jpg" alt="" height="auto" width="100%" />
                 </button>
             </div>
         </div>
@@ -50,7 +62,7 @@
             <div class="w3-margin">
                 <button onclick="document.getElementById('climate').style.display='block'" style="width: 100%;" class="w3-button">
 
-                    <img src=".jpg" alt="" height="auto" width="100%" />
+                    <img src="climateEdited.jpg" alt="" height="auto" width="100%" />
                 </button>
             </div>
         </div>
@@ -61,7 +73,7 @@
             <div class="w3-margin">
                 <button onclick="document.getElementById('history').style.display='block'" style="width: 100%;" class="w3-button">
 
-                    <img src=".jpg" alt="" height="auto" width="100%" />
+                    <img src="historyEdited.jpg" alt="" height="auto" width="100%" />
                 </button>
             </div>
         </div>
@@ -74,8 +86,12 @@
                 <span onclick="document.getElementById('animals').style.display='none'" class="w3-button w3-display-topright">&times;</span>
                 <h1>Wild Life</h1>
             </div>
-            <div>
-                <img style="width:100%;" height="auto" src=".jpg" alt="" />
+            <div class="w3-center">
+                <h3>Kiwi Call</h3>
+                    <audio controls style="width:100%">
+                            <source src=".ogg" type="audio/ogg">
+                            <source src="kiwiCall_mixdown.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
             </div>
             <div class="w3-container w3-theme-l1">
                 <p>
@@ -93,33 +109,36 @@
                 </h1>
             </div>
             <div>
-                <img style="width:100%;" height="auto" src=".jpg" alt="" />
+                <img style="width:100%;" height="auto" src="climate_-_nz_sunshine_hours_1971-2000.jpg" alt="" />
             </div>
             <div class="w3-container w3-theme-l1">
                 <p>
-                    
+
                 </p>
             </div>
         </div>
     </div>
 
     <div id="history" class="w3-modal">
-            <div class="w3-modal-content w3-card-4 w3-theme-l4">
-                <div class="w3-container w3-theme-l1">
-                    <span onclick="document.getElementById('history').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                    <h1>
-                        History
-                    </h1>
-                </div>
-                <div>
-                    <img style="width:100%;" height="auto" src=".jpg" alt="" />
-                </div>
-                <div class="w3-container w3-theme-l1">
-                    <p>
-                        
-                    </p>
-                </div>
+        <div class="w3-modal-content w3-card-4 w3-theme-l4">
+            <div class="w3-container w3-theme-l1">
+                <span onclick="document.getElementById('history').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h1>
+                    History
+                </h1>
+            </div>
+            <div>
+                    <audio controls style="width:100%">
+                            <source src="history_01.ogg" type="audio/ogg">
+                            <source src="history.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+            </div>
+            <div class="w3-container w3-theme-l1">
+                <p>
+
+                </p>
             </div>
         </div>
+    </div>
 
 </body>
