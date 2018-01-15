@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="metro.css">
 
     <style>
+        .not-allowed {cursor: not-allowed;}
         video {
             min-width: 100%;
             min-height: 100%;
@@ -108,7 +109,7 @@
                 <h1>Survey</h1>
             </div>
             <div class="w3-center">
-                <form style="font-size: 150%" action="survey@newzealand.counrty" method="post" class="w3-container">
+                <form style="font-size: 150%" action="mailto:survey@NewZealand.country" method="post" class="w3-container">
                 <fieldset>
                     <label>Name</label>
                     <input class="w3-input w3-border w3-light-grey" type="text" name="name">
@@ -118,7 +119,7 @@
                     <input type="radio" class="w3-radio" name="likeNZ" value="yes" checked>
                     <label for="yes">Yes</label>
 
-                    <input type="radio" class="w3-radio" name="likeNZ" value="no" disabled>
+                    <input type="radio" class="w3-radio" name="likeNZ" value="no">
                     <label for="no">No</label>
 
                     <br>
@@ -128,7 +129,10 @@
                     <input type="radio" class="w3-radio" name="likeWeb" value="yes" checked>
                     <label for="yes">Yes</label>
 
-                    <input type="radio" class="w3-radio" name="likeWeb" value="no" disabled>
+                    <div class="tooltip">
+                    <input type="radio" class="w3-radio not-allowed" name="likeWeb" value="no" disabled>
+                    <span class="tooltiptext">Disabled :)</span>
+                    </div>
                     <label for="no">No</label>
 
                     <br>
