@@ -53,4 +53,87 @@
 
     </div>
 
+    <div class="w3-row">
+        <div class="w3-col w3-mobile">
+            <div class="w3-third">
+                <!-- Empty image for formating -->
+                <img src="" alt="">
+            </div>
+            <div class="w3-third w3-center w3-theme-d4 w3-button w3-card-4">
+                <button onclick="document.getElementById('survey').style.display='block'" style="width: 100%;" class="w3-button">
+                    <h1>Complete Our Survey</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-margin">
+        <div class="w3-mobile w3-center">
+            <div class="w3-third w3-mobile">
+                <!-- Empty image for formating -->
+                <img src="" alt="">
+            </div>
+            <div class="w3-third w3-mobile">
+                <img style="width:100%" src="Flag_of_New_Zealand.png" alt="New Zealand flag">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals -->
+    <div id="survey" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-theme-l4">
+            <div class="w3-container w3-theme-l1">
+                <span onclick="document.getElementById('survey').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h1>Survey</h1>
+            </div>
+            <div class="w3-center">
+                <form style="font-size: 150%" action="survey@newzealand.counrty" method="post" class="w3-container">
+                <fieldset>
+                    <label>Name</label>
+                    <input class="w3-input w3-border w3-light-grey" type="text" name="name">
+
+                    <p>Do you like New Zealand?</p>
+
+                    <input type="radio" class="w3-radio" name="likeNZ" value="yes" checked>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" class="w3-radio" name="likeNZ" value="no" disabled>
+                    <label for="no">No</label>
+
+                    <br>
+
+                    <p>Do you like this website?</p>
+
+                    <input type="radio" class="w3-radio" name="likeWeb" value="yes" checked>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" class="w3-radio" name="likeWeb" value="no" disabled>
+                    <label for="no">No</label>
+
+                    <br>
+
+                    <p>Do you like this survey?</p>
+
+                    <select class="w3-select" name="option">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="love">This is the finest survey ever to grace the web.</option>
+                        <option value="meh">The jury is out</option>
+                        <option value="hate it" style="text-transform:uppercase;">I don't know what !@#$ made this survey, but when i find them...</option>
+                    </select>
+                </fieldset>
+
+                    <fieldset>
+                        <input class="w3-btn w3-theme-d1" type="submit" value="Submit">
+                        <input class="w3-btn w3-theme-d1" type="reset" value="Reset">
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="w3-container w3-theme-l1">
+                <p>Disclaimer: We never claimed the survey was serious.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
