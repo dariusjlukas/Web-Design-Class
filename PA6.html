@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PA6</title>
+    <link rel="stylesheet" href="w3.css" />
+    <link rel="stylesheet" href="PA6-theme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        body {
+            background-image: url("CaliforniaBackground.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        [data-tip] {
+            position: relative;
+        }
+
+        [data-tip]:before {
+            content: '';
+            /* hides the tooltip when not hovered */
+            display: none;
+            content: '';
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #1a1a1a;
+            position: absolute;
+            top: 30px;
+            left: 35px;
+            z-index: 8;
+            font-size: 0;
+            line-height: 0;
+            width: 0;
+            height: 0;
+        }
+
+        [data-tip]:after {
+            display: none;
+            content: attr(data-tip);
+            position: absolute;
+            top: 35px;
+            left: 0px;
+            padding: 5px 8px;
+            background: #1a1a1a;
+            color: #fff;
+            z-index: 9;
+            font-size: 0.75em;
+            height: 18px;
+            line-height: 18px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+
+        [data-tip]:hover:before,
+        [data-tip]:hover:after {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-container w3-theme-d1 w3-center">
+        <h1>PA6 California Survey</h1>
+    </div>
+    <div class="w3-bar w3-xlarge w3-theme-l1 w3-center">
+        <a href="" class="w3-bar-item w3-button w3-border-right w3-mobile w3-theme">
+            <i class="material-icons">home</i>
+        </a>
+        <a href="" class="w3-bar-item w3-button w3-border-right w3-mobile">About</a>
+    </div>
+
+    <form method="post" action="mailto:amadsen@aacps.org">
+        <div class="w3-row">
+            <div class="w3-mobile w3-container" style="font-size:150%;">
+
+                <fieldset>
+                    <label class="w3-text-blue" for="firstname">First Name:</label>
+                    <input class="w3-input" name="firstname" type="text" maxlength="45" style="width: 20%;">
+                    <br>
+
+
+                    <label class="w3-text-blue" for="lastname">Last Name:</label>
+                    <input class="w3-input" name="lastname" type="text" maxlength="55" style="width: 20%;">
+                    <br>
+
+                    <label class="w3-text-blue" for="org">Organization (If applicable):</label>
+                    <input class="w3-input" name="org" type="text" maxlength="80" style="width: 30%;" placeholder="(max 80)">
+                    <br>
+
+                    <label class="w3-text-blue" for="email">E-mail:</label>
+                    <input class="w3-input" name="email" type="email" maxlength="80" style="width: 30%;" placeholder="someone@email.com">
+                    <br>
+
+                    <label class="w3-text-blue" for="whySurvey">What is your purpose for taking this survey?</label>
+                    <select class="w3-select" name="whySurvey" size="5">
+                        <option value="helpful viewer">I am a helpful viewer.</option>
+                        <option value="strong opinions">I have strong opinions of the website.</option>
+                        <option value="mean website made me">The mean website made me.</option>
+                        <option value="grading it">I am grading it.</option>
+                        <option value="accident">I'm here by accident.</option>
+                        <option value="idk">Not sure.</option>
+                    </select><br><br>
+
+                    <label class="w3-text-blue" for="findSurvey">How did you find this survey?</label>
+                    <select class="w3-select" name="findSurvey">
+                        <option value="helpful viewer">Morpheus told me.</option>
+                        <option value="strong opinions">Don't underestimate the power of the dark side of the force.</option>
+                        <option value="mean website made me" selected>I type in random url's in my free time.</option>
+                        <option value="grading it">The very helpful and awesomely styled index page brought me here.</option>
+                    </select><br><br>
+
+                    <label class="w3-text-blue" for="findSurvey">Do you intend to be honest in this survey? (Hold down ctrl on Windows to select multiple)</label>
+                    <select class="w3-select" name="findSurvey" multiple="multiple" size="4">
+                        <option value="strong opinions">Yes.</option>
+                        <option value="mean website made me">No.</option>
+                        <option value="helpful viewer">I promise I'm lying.</option>
+                        <option value="grading it">Why would you ask that?.</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <label class="w3-text-blue" for="overallRating">Overall, how would you rate the website?</label>
+                    <br>
+                    <input class="w3-radio" name="overallRating" type="radio" value="5">5
+                    <br>
+                    <input class="w3-radio" name="overallRating" type="radio" value="4">4
+                    <br>
+                    <input class="w3-radio" name="overallRating" type="radio" value="3">3
+                    <br>
+                    <input class="w3-radio" name="overallRating" type="radio" value="2">2
+                    <br>
+                    <input class="w3-radio" name="overallRating" type="radio" value="1">1
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="colorRating">How would you rate the color scheme?</label>
+                    <br>
+                    <input class="w3-radio" name="colorRating" type="radio" value="5">5
+                    <br>
+                    <input class="w3-radio" name="colorRating" type="radio" value="4">4
+                    <br>
+                    <input class="w3-radio" name="colorRating" type="radio" value="3">3
+                    <br>
+                    <input class="w3-radio" name="colorRating" type="radio" value="2">2
+                    <br>
+                    <input class="w3-radio" name="colorRating" type="radio" value="1">1
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="informationRating">How would you rate the information?</label>
+                    <br>
+                    <input class="w3-radio" name="informationRating" type="radio" value="5">5
+                    <br>
+                    <input class="w3-radio" name="informationRating" type="radio" value="4">4
+                    <br>
+                    <input class="w3-radio" name="informationRating" type="radio" value="3">3
+                    <br>
+                    <input class="w3-radio" name="informationRating" type="radio" value="2">2
+                    <br>
+                    <input class="w3-radio" name="informationRating" type="radio" value="1">1
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="findRating">How easy was it to find information?</label>
+                    <br>
+                    <input class="w3-radio" name="findRating" type="radio" value="5" checked>5
+                    <br>
+                    <input class="w3-radio" name="findRating" type="radio" value="4">4
+                    <br>
+                    <input class="w3-radio" name="findRating" type="radio" value="3">3
+                    <br>
+                    <input class="w3-radio" name="findRating" type="radio" value="2">2
+                    <br>
+                    <input class="w3-radio" name="findRating" type="radio" value="1">1
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="recommend">How likely are you to recommend the website to someone else?</label>
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="5" checked>5
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="4">4
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="3">3
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="2">2
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="1">1
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="goodAreas">Which areas were good?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodAreas" value="Layout">Layout
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodAreas" value="Information">Information
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodAreas" value="usability">usability
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodAreas" value="aesthetics">aesthetics
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="badAreas">Which areas need improvement?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badAreas" value="Layout">Layout
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badAreas" value="Information">Information
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badAreas" value="usability">usability
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badAreas" value="aesthetics">aesthetics
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badAreas" value="None" checked>None
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="goodPages">Which pages did you like?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodPages" value="Home">Home
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodPages" value="San Francisco">San Francisco
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodPages" value="Sacramento">Sacramento
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodPages" value="Los Angeles">Los Angeles
+                    <br>
+                    <input class="w3-check" type="checkbox" name="goodPages" value="None" checked>None
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="badPages">Which pages need improvement?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badPages" value="Home">Home
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badPages" value="San Francisco">San Francisco
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badPages" value="Sacramento">Sacramento
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badPages" value="Los Angeles">Los Angeles
+                    <br>
+                    <input class="w3-check" type="checkbox" name="badPages" value="None" checked>None
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="catagoriesCheckbox">Which, if any, of the following catagories would you fall into?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="catagoriesCheckbox" value="Resident">Resident
+                    <br>
+                    <input class="w3-check" type="checkbox" name="catagoriesCheckbox" value="Traveler">Traveler
+                    <br>
+                    <input class="w3-check" type="checkbox" name="catagoriesCheckbox" value="Business Owner">Business Owner
+                    <br>
+                    <input class="w3-check" type="checkbox" name="catagoriesCheckbox" value="Internet Troll">Internet Troll
+                    <br>
+                    <input class="w3-check" type="checkbox" name="catagoriesCheckbox" value="None">None of the above (Please describe below)
+                    <br>
+                    <br>
+
+                    <textarea name="catagoriesTextarea" id="catagoriesTextarea" cols="50" rows="10">How would you describe yourself?</textarea>
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="imageMapReaction">When you saw how accurate the image map was, which of the following best describes your reaction?</label>
+                    <select class="w3-select" name="imageMapReaction">
+                        <option value="positive">Absolute awe!</option>
+                        <option value="meh">What is an image map?</option>
+                        <option value="negative">Didn't notice.</option>
+                    </select><br><br>
+
+                    <label class="w3-text-blue" for="agreeWith">Which, if any, of the following statements would you agree with?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="agreeWith" value="The Website was well though out">The Website was well though out
+                    <br>
+                    <input class="w3-check" type="checkbox" name="agreeWith" value="The website had a good color scheme">The website had a good color scheme
+                    <br>
+                    <input class="w3-check" type="checkbox" name="agreeWith" value="The image map on the first page was the best">The image map on the first page was the best
+                    <br>
+                    <input class="w3-check" type="checkbox" name="agreeWith" value="None of the above">None of the above (Please describe below)
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="agreeWithTextarea">Please elaborate:</label>
+                    <br>
+                    <textarea name="agreeWithTextarea" id="agreeWithTextarea" cols="50" rows="10"></textarea>
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="reaction">After viewing the website, which of the following best describes your reaction?</label>
+                    <select class="w3-select" name="reaction">
+                        <option value="positive">I loved the website!</option>
+                        <option value="meh">The jury is out.</option>
+                        <option value="negative">The website caused physical pain.</option>
+                        <option value="umm...">I hate computers!</option>
+                    </select><br>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <label class="w3-text-blue" for="surveyRating">How would you rate this survey?</label>
+                    <br>
+                    <input class="w3-radio" name="surveyRating" type="radio" value="5" checked>5
+                    <input class="w3-radio" name="surveyRating" type="radio" value="4">4
+                    <input class="w3-radio" name="surveyRating" type="radio" value="3">3
+                    <input class="w3-radio" name="surveyRating" type="radio" value="2">2
+                    <input class="w3-radio" name="surveyRating" type="radio" value="1">1
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="surveyReaction">After taking this <b>survey</b>, which of the following best describes your reaction?</label>
+                    <select class="w3-select" name="surveyReaction">
+                        <option value="positive">I feel surveyed!</option>
+                        <option value="meh">Not sure what I'm looking at...</option>
+                        <option value="negative">Wrong!</option>
+                        <option value="umm...">...how do I use this?...</option>
+                    </select><br><br>
+
+                    <label class="w3-text-blue" for="improveSurvey">If there is anything we could do to improve the survey, please describe below:</label>
+                    <br>
+                    <textarea name="improveSurvey" id="improveSurvey" cols="50" rows="10"></textarea>
+                    <br>
+                    <br>
+
+                    <label class="w3-text-blue" for="extra">If there is anything you were not able to communicate in the survey, please describe below:</label>
+                    <br>
+                    <textarea name="extra" id="extra" cols="50" rows="10"></textarea>
+                    <br>
+
+
+                </fieldset>
+
+                <input class="w3-btn w3-theme-d1" type="submit" value="submit">
+                <input class="w3-btn w3-theme-d1" type="reset" value="reset">
+            </div>
+        </div>
+    </form>
+
+
+</body>
