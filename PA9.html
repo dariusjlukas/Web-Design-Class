@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PA9</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="PA9.css">
+</head>
+
+<body onLoad="CopyRight(); todayDate();">
+    <script src="PA9.js"></script>
+
+    <!-- <div class="w3-bar w3-black">
+        <a href="PA9.html" class="w3-bar-item w3-button w3-mobile w3-gray">Home</a>
+        <div class="dropdown w3-bar-item w3-mobile">
+        <a href="#" class="w3-button">Category</a>
+        <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+        </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Deals</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Employment</a>
+    </div> -->
+
+    <div class="navbar">
+        <a href="PA9.html">Home</a>
+        <div class="dropdown">
+            <button onclick="navigateCat();" class="dropbtn">Category
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class=" dropdown-content">
+                <a href="PA9-link.html">Hats</a>
+                <a href="PA9-link.html">Shirts</a>
+                <a href="PA9-link.html">Jackets</a>
+                <a href="PA9-link.html">Rocket Launches</a>
+                <a href="PA9-link.html">Flame throwers</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="navigateDeal();" class="dropbtn">Deals
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class=" dropdown-content">
+                <a href="PA9-link.html">Basic Package</a>
+                <a href="PA9-link.html">Advanced Package</a>
+                <a href="PA9-link.html">Super Social Media Package</a>
+                <a href="PA9-link.html">Reddit DDOS package</a>
+                <a href="PA9-link.html">Elon Musk endorsement</a>
+            </div>
+        </div>
+        <a href="PA9-emp.html">Employment</a>
+    </div>
+
+    <div class="w3-container w3-dark-gray w3-center">
+        <div class="w3-padding">
+            <img height="170px;" width="auto;" src="logoT.png" alt="logo company logo (it is supposed to be lame for irony)">
+        </div>
+    </div>
+
+    <div class="we-container w3-center">
+        <div id="displayDate"></div>
+    </div>
+
+    <div class="w3-container w3-dark-gray w3-center">
+        <p> </p>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-twothird w3-mobile w3-gray">
+            <div class="w3-container">
+                <h1>Want your company to
+                    <strong>stand out</strong> from the crowd?</h1>
+                <br/>
+                <br/>
+                <h1>Are you looking to generate some quick revenue?</h1>
+                <br/>
+                <br/>
+                <h1>Are you learning about MVP in business class?</h1>
+                <br/>
+                <br/>
+                <h1>If you answered
+                    <q>yes</q> to any of these questions, you should consider partnering with the
+                    <i>Logo Company</i>.</h1>
+            </div>
+        </div>
+
+        <div class="w3-third w3-mobile">
+            <div class="w3-container">
+                <h3>Despite our name, we do not design logos. If we could, ours would consist of more than a circle. What we
+                    can do is put your logo on various, seemingly random products. This is a tried and proven method of generating
+                    revenue. But don't take our word, just listen to the reviews from some of our customers.
+                </h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-third w3-mobile">
+            <div class="w3-container">
+                <h1>Our Impact</h1>
+                <p>We help our customers reach the mass market of gullible buyers by placing your logo on misc items that consumers
+                    are guarente to buy. We then leverage free marketing via social media and the interwebs, creating an
+                    unreasonable amount of hype for your mundane product. The end result is revenue and a brand name at little
+                    cost, using MVP business techniques.
+                </p>
+            </div>
+        </div>
+        <div class="w3-twothird w3-mobile w3-gray">
+            <div class="w3-container w3-center">
+                <h1>Example Products:</h1>
+                <br>
+                <img src="hat.jpg" height="auto" width="auto" alt="Hat with logo">
+                <br>
+                <br>
+                <h3>[Image of Boring Company flame thrower omitted for school]</h3>
+                <br>
+                <br>
+                <img src="fire.jpg" height="auto" width="auto" alt="Boring company fire extinguisher">
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-rest w3-dark-gray">
+            <div class="w3-container">
+                <p> </p>
+                <!-- Last date modified -->
+                <div style="text-align:center;" id="dateModified">
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
