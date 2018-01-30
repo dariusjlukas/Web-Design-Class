@@ -1,72 +1,89 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Design</title>
-    <link rel="stylesheet" href="w3.css"/>
+    <link rel="stylesheet" href="w3.css" />
 </head>
 
 <body class="w3-black">
     <div style="height: 100%;" class="w3-cell-row">
-    
-    <div style="width:100%" class="w3-mobile w3-container w3-black">
-        <h1 class="w3-center">Web Design Main Link Page</h1>
-        <h3 class="w3-center">Darius Lukas</h3>
-    </div>
 
-    
-	<div class="w3-container w3-mobile w3-bar-block w3-black">
-        <button onclick="myFunction('PAs')" class="w3-bar-item w3-mobile w3-button">
-        PAs</button>
-        <div id="PAs" class="w3-container w3-hide">
-
-            <a style="text-decoration: none;" href="PA6.html"><div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
-            PA6
-            <div class="w3-light-grey w3-round">
-                <div class="w3-container w3-round w3-blue" style="width:100%">100%</div>
-            </div>
-            </div></a>
-            
-            <a style="text-decoration: none;" href="PA7.html"><div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
-            PA7
-            <div class="w3-light-grey w3-round">
-                <div class="w3-container w3-round w3-blue" style="width:100%">100%</div>
-            </div>
-            </div></a>
-            
-            <a style="text-decoration: none;" href="PA8.html"><div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
-            PA8
-            <div class="w3-light-grey w3-round">
-                <div class="w3-container w3-round w3-blue" style="width:100%">100%</div>
-            </div>
-            </div></a>
+        <div style="width:100%" class="w3-mobile w3-container w3-black">
+            <h1 class="w3-center">Web Design Main Link Page</h1>
+            <h3 class="w3-center">Darius Lukas</h3>
         </div>
-        <a href="https://github.com/dariusjlukas/Web-Design-Class" class="w3-bar-item w3-mobile w3-button">GitHub</a>
-        <a href="thisPage.html" class="w3-bar-item w3-mobile w3-button">This Page</a>
-    </div>
-    
-    <div class="w3-hide-small w3-panel w3-cell-bottom w3-blue w3-display-container">
-        <span onclick="this.parentElement.style.display='none'"
-         class="w3-button w3-blue w3-large w3-display-topright">&times;</span>
-        <h3>Info!</h3>
-        <p>This is the new grading experience. For the old one, click <a href="https://main-page-37708.herokuapp.com/">here</a>.</p>
-    </div>
-    
+
+
+        <div class="w3-container w3-mobile w3-bar-block w3-black">
+            <button onclick="myFunction('PAs')" class="w3-bar-item w3-mobile w3-button">
+                PAs</button>
+            <div id="PAs" class="w3-container w3-hide">
+
+                <a style="text-decoration: none;" href="PA6.html">
+                    <div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
+                        PA6
+                        <div class="w3-light-grey w3-round">
+                            <div class="w3-container w3-round w3-blue" style="width:100%">100%</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a style="text-decoration: none;" href="PA7.html">
+                    <div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
+                        PA7
+                        <div class="w3-light-grey w3-round">
+                            <div class="w3-container w3-round w3-blue" style="width:100%">100%</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a style="text-decoration: none;" href="PA8.html">
+                    <div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
+                        PA8
+                        <div class="w3-light-grey w3-round">
+                            <div class="w3-container w3-round w3-blue" style="width:100%">100%</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a style="text-decoration: none;" href="PA9.html">
+                    <div class="w3-border w3-border-blue w3-padding w3-bar-item w3-mobile w3-button">
+                        PA9
+                        <div class="w3-light-grey w3-round">
+                            <div class="w3-container w3-round w3-blue" style="width:80%">80%</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="https://github.com/dariusjlukas/Web-Design-Class" class="w3-bar-item w3-mobile w3-button">GitHub</a>
+            <a href="thisPage.html" class="w3-bar-item w3-mobile w3-button">This Page</a>
+        </div>
+
+        <div class="w3-hide-small w3-panel w3-cell-bottom w3-blue w3-display-container">
+            <span onclick="this.parentElement.style.display='none'" class="w3-button w3-blue w3-large w3-display-topright">&times;</span>
+            <h3>Info!</h3>
+            <p>This is the new grading experience. For the old one, click
+                <a href="https://main-page-37708.herokuapp.com/">here</a>.</p>
+        </div>
+
 
     </div>
     <script>
-    function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-    }
-</script>
-    
-    
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
 </body>
+
 </html>
